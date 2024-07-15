@@ -1,0 +1,310 @@
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles for the body and header */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: circle;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  color: #e0d2d7;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #ece1e5;
+  color: #020314;
+}
+
+header nav ol {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+header nav ol img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+header nav ol.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styles for the main section */
+main {
+  padding: 100px 20px;
+}
+
+main section {
+  margin-bottom: 50px;
+}
+
+main section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+main section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+main section button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main section button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+main section ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 30px;
+}
+
+main section li {
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+main section li:nth-child(4n) {
+  margin-right: 0;
+}
+
+main section li:hover {
+  transform: translateY(-10px);
+}
+
+main section li img {
+  width: 100%;
+}
+
+footer {
+ position: center;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content label {
+  margin-bottom: 10px;
+}
+
+.modal-content input[type="text"],.modal-content input[type="email"],.modal-content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.modal-content input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.modal-content p {
+  margin-top: 20px;
+}
+
+.modal-content a {
+  text-decoration: none;
+  color: #333;
+}
+
+.modal-content a:hover {
+  color: #fff;
+}
+
+/* Show the modal when the login or sign up button is clicked */
+#login-btn, #signup-btn {
+  cursor: pointer;
+}
+
+#login-btn:hover, #signup-btn:hover {
+  color: #fff;
+}
+
+#login-modal.show, #signup-modal.show {
+  display: block;
+}
+
+/* Add a blur glass frame to the modal content */
+.modal-content {
+  /* ... existing styles ... */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button[onclick="history.back()"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[onclick="history.back()"]:hover {
+  background-color: #3e8e41;
+}
+
+form {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.morphine-glass-paragraph {
+  /* Background and texture */
+  background-color: #f7f7f7; /* Light gray background */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+
+  /* Typography */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333; /* Dark gray text */
+
+  /* Borders and shadows */
+  border-radius: 10px;
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Padding and margin */
+  padding: 20px;
+  margin: 30px 0;
+
+  /* Additional styles */
+  text-align: justify;
+  hyphens: auto;
+}

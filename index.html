@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephedrines Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> 
+                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="menu.html" target="_self">Menu</a></li>
+                <li><a href="about.html" target="_self">About Us</a></li>
+                <li><a href="contact.html" target="_self">Contact Us</a></li>
+                <li><a href="reservation.html" target="_self">Make a Reservation</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+                <li><a href="#" id="signup-btn">Sign Up</a></li>
+                <li>
+                    <form>
+                        <input type="search" id="search" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+            <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+        </div>
+    </div>
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                <input type="submit" value="Sign Up">
+            </form>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+    </div>
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Our chefs are dedicated to crafting dishes that will delight your senses and leave you wanting more. From classic comfort food to innovative twists, our menu is designed to satisfy any appetite. So sit back, relax, and let us treat you to an unforgettable dining experience.Whether you have questions, feedback, or simply want to connect, our team is here for you. We look forward to the opportunity to work closely with you and to embark on a successful journey together.</p>
+            <button>Learn More</button>
+        </section>
+        <section id="menu">
+            <h1>Our Menu</h1>
+            <ul>
+                <li>
+                    <img src="images/pexels-photo-2313686.jpeg" alt="Dish 1" class="glass-frame">
+                    <h2>Asorted meat with vagetables</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$15.99</span>
+                </li>
+                <li>
+                    <img src="images/pexels-photo-604969.jpeg" alt="Dish 2" class="glass-frame">
+                    <h2>Chinesse Dish with sausage</h2>
+                    <button>Place order now</button>
+                    <span>$12.99</span>
+                </li>
+                <li>
+                    <img src="images/pexels-photo-2113556.jpeg" alt="Dish 3" class="glass-frame">
+                    <h2>Fried eggs with strawberry sauce</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$12.45</span>
+                </li>
+                <li>
+                    <img src="images/pexels-photo-541216.jpeg" alt="Dish 4" class="glass-frame">
+                    <h2>Full table with many meal</h2>
+                    <button>Place order now</button>
+                    <span>$150.90</span>
+                </li>
+            </ul>
+        </section>
+        <section id="about">
+            <h1>Drinks & Alcoholics</h1>
+            <ul>
+                <li>
+                    <img src="images/pexels-photo-1233319.jpeg" alt="Drink 1" class="glass-frame">
+                    <h2>Orange Juice</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$20.99</span>
+                </li>
+                <li>
+                    <img src="images/pexels-photo-8084601.jpeg" alt="Drink 2" class="glass-frame">
+                    <h2>Lemmon Juice</h2>
+                    <button>Place order now</button>
+                    <span>$22.99</span>
+                </li>
+                <li>
+                    <img src="images/wine-870734_1280.jpg" alt="Drink 3" class="glass-frame">
+                    <h2>Red Wine</h2>
+                    <button>Order Now</button>
+                    <span>$45.45</span>
+                </li>
+                <li>
+                    <img src="images/table-4718533_1280.jpg" alt="Drink 4" class="glass-frame">
+                    <h2>Full Wine Table</h2>
+                    <button>Place your order now</button>
+                    <span>$125.50</span>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>Asorted & Chinesse Dishes</h1>
+            <ul>
+                <li>
+                    <img src="images/pexels-photo-1566837.jpeg" alt="Dish 5" class="glass-frame">
+                    <h2>Asorted meat with vagetables</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$15.99</span>
+                </li>
+                <li>
+                    <img src="images/pexels-photo-327158.jpeg" alt="Dish 6" class="glass-frame">
+                    <h2>Chinesse Dish with sausage</h2>
+                    <button>Place order now</button>
+                    <span>$12.99</span>
+                </li>
+                <li>
+                    <img src="images/free-photo-of-a-plate-with-a-rice-dish.jpeg" alt="Dish 7" class="glass-frame">
+                    <h2>Plain Rice with beef sauce</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$12.45</span>
+                </li>
+                <li>
+                    <img src="images/pexels-photo-905847.jpeg" alt="Dish 4" class="glass-frame">
+                    <h2>Assorted Pizza</h2>
+                    <button>Place order now</button>
+                    <span>$70.50</span>
+                </li>
+            </ul>
+        </section>
+        <section id="natural fruits">
+            <ul>
+                <li>
+                    <img src="images/Pizza.jpg" alt="Dish 5" class="glass-frame">
+                    <h2>Pizza with Vagetables</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$15.99</span>
+                </li>
+                <li>
+                    <img src="images/yumme burger.jpg" alt="Dish 6" class="glass-frame">
+                    <h2>Yummy Burger</h2>
+                    <button>Place order now</button>
+                    <span>$40.99</span>
+                </li>
+                <li>
+                    <img src="images/chips.jpg" alt="Dish 7" class="glass-frame">
+                    <h2>Plantain Chips</h2>
+                    <button>Order for your delicious meal</button>
+                    <span>$37.45</span>
+                </li>
+                <li>
+                    <img src="images/meat.jpg" alt="Dish 8" class="glass-frame">
+                    <h2>Grilled Meat</h2>
+                    <button>Place order now</button>
+                    <span>$32.50</span>
+                </li>
+            </ul> 
+            <p>We value your continued support and patronage. As we strive to enhance your experience, we encourage you to stay connected with us for the latest updates, promotions, and new offerings. Your satisfaction is our priority, and we look forward to serving you again. Feel free to make more orders and explore our diverse range of dishes. Thank you for choosing us, and we appreciate your ongoing trust in our services.
+
+
+
+
+            </p>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>    
+    </main>
+    <footer>
+        <p>&copy;  2024 Ephedrines Restaurant All right reserves</p>
+    </footer>
+    <button onclick="history.back()">Back</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
